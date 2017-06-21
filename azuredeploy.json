@@ -53,7 +53,7 @@
 			"moodleInstallScriptFilename": "install_moodle.sh",
 			"moodleSetupScriptFilename"	 :   "setup_moodle.sh",
 
-			"osType": { "publisher": "Canonical", "offer": "UbuntuServer", "sku": "14.04.4-LTS", "version": "latest" },
+			"osType": { "publisher": "Canonical", "offer": "UbuntuServer", "sku": "14.04.5-LTS", "version": "latest" },
 
 			"resourcesPrefix":		"[ variables('rpfx')]",
 			"vNetAddressSpace":		"[parameters('vNetAddressSpace')]",
