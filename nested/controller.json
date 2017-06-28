@@ -87,7 +87,7 @@
 			
 			"properties":	{
 				 "networkProfile":	{ "networkInterfaces": [ { "id": "[variables('nicRef')]" } ] },
-				"hardwareProfile":	{ "vmSize": "Standard_D1" },
+				"hardwareProfile":	{ "vmSize": "Standard_D1_v2" },
 				      "osProfile":	{ "computerName": "[parameters('moodleCommon').jboxVmName]", "adminUsername": "[parameters('moodleCommon').adminUsername]", "adminPassword": "[parameters('moodleCommon').adminPassword]" },
 				 "storageProfile":	{ "imageReference": "[parameters('moodleCommon').osType]",
                          "osDisk":	{ "name": "[parameters('moodleCommon').jboxVmName]", "createOption": "fromImage", "managedDisk": { "storageAccountType": "Standard_LRS" } },
