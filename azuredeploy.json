@@ -6,8 +6,8 @@
 		"resourcesPrefix":		{ "type": "string",			"defaultValue": "PaaS01LMS",   	"metadata": {"description": "Prefix of storage account name, network, virtual machines, and so on"} }, 
 		"vNetAddressSpace":		{ "type": "string",			"defaultValue": "172.35.0.0",		"metadata": {"description": "Address range for the Moodle virtual network - presumed /16 - further subneting during vnet creation"} }, 
 		"moodleVersion":		{ "type": "string",			"defaultValue": "MOODLE_32_STABLE", "metadata": {"description": "The Moodle version you want to install."},	"allowedValues": ["MOODLE_33_STABLE","MOODLE_32_STABLE","MOODLE_31_STABLE","MOODLE_30_STABLE","MOODLE_29_STABLE"] },
-		"glusterTshirtSize":	{ "type": "string",			"defaultValue": "Small",			"metadata": {"description": "VM size for the gluster nodes"},			"allowedValues": ["Small","Medium","Large"] },
-		"mariaDbTshirtSize":	{ "type": "string",			"defaultValue": "Small",			"metadata": {"description": "VM size for the mariadb nodes"},			"allowedValues": ["Small","Medium","Large"] },
+		"glusterTshirtSize":	{ "type": "string",			"defaultValue": "Medium",			"metadata": {"description": "VM size for the gluster nodes"},			"allowedValues": ["Small","Medium","Large"] },
+		"mariaDbTshirtSize":	{ "type": "string",			"defaultValue": "Medium",			"metadata": {"description": "VM size for the mariadb nodes"},			"allowedValues": ["Small","Medium","Large"] },
 		"adminUsername":		{ "type": "string",			"defaultValue": "wasadmin",		"metadata": {"description": "ssh user name"}},
 		"adminPassword":		{ "type": "securestring",										"metadata": {"description": "ssh password"}},
 		"mySqlUserPassword":	{ "type": "securestring",										"metadata": {"description": "my sql regular user password"}},
@@ -43,8 +43,8 @@
 		"rpfx": "[tolower(parameters('resourcesPrefix'))]",
 
 		"moodleCommon": {
-			"baseTemplateUrl": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/moodle-scalable-cluster-ubuntu/nested/",
-			"scriptLocation":  "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/moodle-scalable-cluster-ubuntu/scripts/",
+			"baseTemplateUrl": "https://raw.githubusercontent.com/thevipa/lmstest/master/nested/",
+			"scriptLocation":  "https://raw.githubusercontent.com/thevipa/lmstest/master/scripts/",
 
 			"computeApi":  	"2016-04-30-preview",
 
