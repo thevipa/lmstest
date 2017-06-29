@@ -49,7 +49,7 @@
 			
 			"dependsOn":	[ "[concat('Microsoft.Storage/storageAccounts/', parameters('moodleCommon').vmssdStorageAccounttName)]" ],
 			
-			"sku":			{ "capacity": 3, "name": "Standard_D2", "tier": "Standard" },
+			"sku":			{ "capacity": 3, "name": "Standard_D2_v2", "tier": "Standard" },
 
 			"properties":	{ "overprovision": "true", "upgradePolicy": { "mode": "Manual" },
 				"virtualMachineProfile": {
